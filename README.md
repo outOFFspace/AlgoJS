@@ -1,2 +1,2 @@
 # AlgoJS
-Solutions for the popular interview challenges
+Solutions for the popular interview challenges with JavaScript
