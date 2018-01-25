@@ -12,7 +12,7 @@ convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 */
 
 let convert = function(s, numRows) {
-	let vs = {};
+    let vs = {};
     const n = s.length;
     let i = 0;
     let res = '';
