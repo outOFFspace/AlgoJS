@@ -10,3 +10,36 @@ Find the median of the updated list (i.e., for the first element through the  el
 Print the list's updated median on a new line. The printed value must be a double-precision number scaled to decimal place (i.e.,  format).
 */
 
+function binaryInsert(x, a) {
+    let l = 0,
+    r = a.length - 1,
+    m;
+    while (l <= r) {
+        m = (l + r) / 2 | 0;
+        if (a[m] > x) {
+            r = m - 1;
+            continue;
+        }
+        l = m + 1;
+        if (a[m] === x) {
+            break;
+        }
+    }
+    a.splice(l, 0, x);
+}
+
+function getMedian(a) {
+    if (a.length % 2 === 1) {
+        return a[(a.length - 1) / 2].toFixed(1);
+    } else {
+        var numA = a[Math.floor((a.length - 1) / 2)];
+        var numB = a[Math.floor((a.length / 2))];
+        return ((numA + numB) / 2).toFixed(1);
+    }
+}
+
+let a = [];
+for (let i = 0; i < 10; i++) {
+    binaryInsert(Math.floor(Math.random() * 10) + 1, a);
+    console.log(getMedian(a));
+}
