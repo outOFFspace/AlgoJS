@@ -19,13 +19,13 @@ let convert = function(s, numRows) {
     while (i < n) {
       for (let j = 0; j < numRows && i < n; j++) {
       	if (!vs[j]) {
-        	vs[j] = [];
+            vs[j] = [];
         }
         vs[j].push(s[i++]);
       }
       for (let j = numRows - 2; j >= 1 && i < n; j--) {    
       	if (!vs[j]) {
-        	vs[j] = [];
+            vs[j] = [];
         }
         vs[j].push(s[i++]);
       }
