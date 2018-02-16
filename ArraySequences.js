@@ -1,5 +1,6 @@
 /**
-Given an array of integers (sorted), find the sequences of integers. e.g. [4,5,7,9,10,12] should return [4,5], [7], [9,10],[12]
+Given an array of integers (sorted), find the sequences of integers. e.g. [4,5,7,9,10,12] should return 
+[4,5], [7], [9,10],[12]
 */
 
 
